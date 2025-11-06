@@ -1,52 +1,52 @@
-import React from 'react';
-import { Menu, X } from 'lucide-react';
-import logo from '../assets/logo1.png'; // Adjust the path according to your project structure
+import React, { useState } from "react";
+import { HiMenu, HiX } from "react-icons/hi";
+import NavbarItems from "./NavbarItems.jsx";
 
-function Navbar() {
-  const [isOpen, setIsOpen] = React.useState(false);
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <nav className="bg-[#ffd427] font-sans text-black py-4 border-b-[3px] border-black">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center">
-          <img src={logo} alt="DevFest Logo" className="h-[50px] sm:h-[60px] w-[136px]" />
-        </div>
+    <nav className="fixed top-0 w-full z-50 bg-[#f0f0f0]/95 backdrop-blur-md border-b-2 border-gray-300 shadow-lg">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20">
+          {/* Logo */}
+          <div className="flex-shrink-0 flex items-center">
+            <img src="/devfest.png" alt="DevFest" className="h-16 w-auto" />
+          </div>
 
-        <div className="hidden sm:flex space-x-6">
-          <a href="#" className="text-black hover:text-[#6e6a6a] transition my-2 duration-300 text-xl font-semibold">
-            Home
-          </a>
-          <a href="#" className="text-black hover:text-[#6e6a6a] transition my-2 -mx-4 duration-300 text-xl font-semibold">
-            Badge
-          </a>
-        </div>
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex md:items-center gap-6">
+            <NavbarItems />
+          </div>
 
-        <button
-          className="sm:hidden p-2 rounded-md hover:bg-[#f3c800] focus:outline-none"
-          onClick={toggleMenu}
-        >
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
-      </div>
-
-      {isOpen && (
-        <div className="sm:hidden bg-[#ffd427] border-t-[3px] border-black py-4">
-          <div className="container mx-auto flex flex-col space-y-4">
-            <a href="#" className="text-black hover:text-[#6e6a6a] transition duration-300 text-xl font-semibold">
-              Home
-            </a>
-            <a href="#" className="text-black hover:text-[#6e6a6a] transition duration-300 text-xl font-semibold">
-              Badge
-            </a>
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button
+              onClick={toggleMenu}
+              className="inline-flex items-center justify-center p-3 rounded-full text-gray-600 hover:text-gray-900 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 transition-colors duration-200"
+            >
+              {isOpen ? <HiX size={24} /> : <HiMenu size={24} />}
+            </button>
           </div>
         </div>
-      )}
+      </div>
+
+      {/* Mobile menu with smooth slide animation */}
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="bg-[#f0f0f0] border-t border-gray-300 px-4 py-6">
+          <NavbarItems />
+        </div>
+      </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

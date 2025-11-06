@@ -1,24 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/gdg.svg'
-import BadgeCreator from './components/BadgeCreator'
-import BadgeTry from './components/BadgeTry'
-import './App.css'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import Footer from './components/Footer'
-function App() {
-  const [count, setCount] = useState(0)
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AppLayout from "./components/AppLayout.jsx";
+import BadgeCreator from "./components/BadgeCreator.jsx";
+import Agenda from "./components/Agenda.jsx";
 
+function App() {
   return (
-    <>
-      <Navbar/>
-      <Home/>
-      {/* <BadgeCreator/> */}
-      {/* // <BadgeTry /> */}
-      {/* <Footer/> */}
-    </>
-  )
+    <div className="bg-[#1e1e1e] min-h-screen">
+      <BrowserRouter>
+        <Routes>
+          <Route element={<AppLayout />} path={"/"}>
+            <Route element={<BadgeCreator />} path={"/badge"}></Route>
+            <Route element={<Agenda />} path={"/agenda"}></Route>
+            <Route element={<Agenda />} index></Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
-export default App
+export default App;
