@@ -6,7 +6,7 @@ const navbarList = [
   { text: "Create your Badge", link: "/badge" },
 ];
 
-export default function NavbarItems(props) {
+export default function NavbarItems({ closeNavbar }) {
   const navigate = useNavigate();
 
   return (
@@ -29,7 +29,10 @@ export default function NavbarItems(props) {
           <button
             key={index}
             className="bg-white text-black px-6 py-3 rounded-3xl border-2 border-black text-sm font-bold transition-all hover:bg-gray-50 font-google-sans w-full"
-            onClick={() => navigate(item.link)}
+            onClick={() => {
+              navigate(item.link);
+              closeNavbar();
+            }}
           >
             {item.text}
           </button>

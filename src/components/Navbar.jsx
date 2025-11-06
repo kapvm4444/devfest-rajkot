@@ -12,13 +12,21 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  function closeNavBar() {
+    setIsOpen(false);
+  }
   return (
     <nav className="fixed top-0 w-full z-50 bg-[#f0f0f0]/95 backdrop-blur-md border-b-2 border-gray-300 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <button onClick={() => navigate("/")}>
+            <button
+              onClick={() => {
+                navigate("/");
+                setIsOpen(false);
+              }}
+            >
               <img src="/devfest.png" alt="DevFest" className="h-16 w-auto" />
             </button>
           </div>
@@ -47,7 +55,7 @@ const Navbar = () => {
         }`}
       >
         <div className="bg-[#f0f0f0] border-t border-gray-300 px-4 py-6">
-          <NavbarItems />
+          <NavbarItems closeNavbar={closeNavBar} />
         </div>
       </div>
     </nav>
