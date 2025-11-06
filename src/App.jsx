@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AppLayout from "./components/AppLayout.jsx";
 import BadgeCreator from "./components/BadgeCreator.jsx";
 import Agenda from "./components/Agenda.jsx";
+import LandingPage from "./components/LandingPage.jsx";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
           <Route element={<AppLayout />} path={"/"}>
             <Route element={<BadgeCreator />} path={"/badge"}></Route>
             <Route element={<Agenda />} path={"/agenda"}></Route>
-            <Route element={<Agenda />} index></Route>
+            <Route element={<LandingPage />} index></Route>
           </Route>
         </Routes>
       </BrowserRouter>

@@ -16,121 +16,82 @@ export const agendaData = [
   },
   {
     id: 3,
-    time: "9:45 AM - 10:20 AM",
-    title: "Why Deno is the Way Forward for JavaScript Runtimes",
-    description:
-      "Explore the future of JavaScript runtimes and discover why Deno is revolutionizing backend development with modern features and security.",
+    time: "9:45 AM - 10:30 AM",
+    title: "Get Started with Gemini CLI: A Hands-on Guide",
+    description: "by Jitendra Gupta, Enterprise Cloud Architect @4Flow",
   },
   {
     id: 4,
-    time: "10:20 AM - 10:55 AM",
-    title: "Harnessing the Power of TensorFlow on GKE Autopilot",
-    description:
-      "Learn how to deploy, scale, and manage TensorFlow models efficiently using Google Kubernetes Engine Autopilot for production workloads.",
+    time: "10:30 AM - 11:15 AM",
+    title: "Google Vertex AI: An Introduction to AutoML with Real-World Demo",
+    description: "by Harsh Manvar, Docker Caption of India",
   },
   {
     id: 5,
-    time: "10:55 AM - 11:15 AM",
-    title: "Coffee Break & Networking",
+    time: "11:15 AM - 11:35 AM",
+    title: "Refreshment Break",
     description:
-      "Take a refreshing break, grab some coffee, and connect with fellow developers and tech enthusiasts.",
+      "Take a refreshing break, get recharged for the amazing day ahead",
   },
   {
     id: 6,
-    time: "11:15 AM - 11:50 AM",
-    title: "GitHub Actions: Automate Everything in Your Development Workflow",
+    time: "11:35 AM - 12:30 PM",
+    title: "Boost your analytics with Gemini in BigQuery",
     description:
-      "Master the art of CI/CD with GitHub Actions. Learn to automate testing, deployment, and development workflows seamlessly.",
+      "by Nirav Kothari, Sr. Technical Architect  @Quantiphi Analytics",
   },
   {
     id: 7,
-    time: "12:00 PM - 1:30 PM",
+    time: "12:30 PM - 1:30 PM",
     title: "Lunch Break",
     description:
-      "Enjoy a delicious lunch break while networking with speakers, sponsors, and fellow attendees.",
+      "Enjoy a delicious lunch break while networking with speakers, experts, and fellow attendees.",
   },
   {
     id: 8,
-    time: "1:30 PM - 2:05 PM",
-    title: "Mastering Flutter and Firebase with Multiple Flavors",
-    description:
-      "Advanced Flutter development techniques with Firebase integration, exploring app flavors and environment configurations.",
+    time: "1:30 PM - 2:15 PM",
+    title: "See ya SEO…Hello GEO - Generative Engine Optimisation!",
+    description: "by Indranil Chandra, ML & Data Architect @Upstox",
   },
   {
     id: 9,
-    time: "2:05 PM - 2:50 PM",
-    title:
-      "Fueling Growth to MVP: A CEO's Guide to Strategic Software Development",
+    time: "2:15 PM - 2:40 PM",
+    title: "Refreshment Break",
     description:
-      "Strategic insights on building successful software products from concept to market, shared by industry leaders.",
+      "Time to take a small break and reload your mind with more energy",
   },
   {
     id: 10,
-    time: "2:50 PM - 3:10 PM",
-    title: "Introduction to Beckn Protocol",
-    description:
-      "A comprehensive overview of the Beckn Protocol and its applications in building interoperable digital commerce networks.",
+    time: "2:40 PM - 3:20 PM",
+    title:
+      "Inside Firebase MCP: Building Smarter, Faster Full-Stack Apps with AI",
+    description: "by Ravi Rupareliya, Team Manager @Simform",
   },
   {
     id: 11,
-    time: "3:10 PM - 3:20 PM",
-    title: "Afternoon Break",
-    description:
-      "Quick refreshment break to recharge for the final sessions of the day.",
+    time: "3:20 PM - 4:00 PM",
+    title: "Turning AI Models into Real-World Solutions with Google Cloud",
+    description: "by Sathya Lakshmi Srinivasan, Founder and CEO @Quorum Chain",
   },
   {
     id: 12,
-    time: "3:20 PM - 4:00 PM",
-    title: "Closing Keynote & Announcements",
+    time: "4:00 PM - 4:40 PM",
+    title: "Closing Notes",
     description:
-      "Reflect on the day's learnings, upcoming opportunities, and closing remarks from the GDG Rajkot team.",
+      "Reflect on the day's learnings, key announcements, and closing remarks from the GDG Rajkot team.",
   },
   {
     id: 13,
-    time: "4:00 PM - 4:30 PM",
-    title: "Speaker Meet & Greet",
+    time: "4:40 PM - 5:10 PM",
+    title: "Surily Surprise",
     description:
-      "Connect directly with our speakers, ask questions, and continue the conversations started during the talks.",
+      "A special surprise session that you won't want to miss! Stay tuned for something exciting.",
+  },
+  {
+    id: 14,
+    time: "5:10 PM - Onwards",
+    title: "Networking and Connect with Speakers",
+    description:
+      "Connect directly with our speakers, ask questions, continue conversations, and build lasting professional relationships.",
   },
 ];
-
-// Color configuration for different event types
-export const timelineColorConfig = {
-  blue: {
-    bg: "bg-blue-500",
-    border: "border-blue-500",
-    text: "text-blue-600",
-    lightBg: "bg-blue-50",
-    ring: "ring-blue-200",
-  },
-  green: {
-    bg: "bg-green-500",
-    border: "border-green-500",
-    text: "text-green-600",
-    lightBg: "bg-green-50",
-    ring: "ring-green-200",
-  },
-  red: {
-    bg: "bg-red-500",
-    border: "border-red-500",
-    text: "text-red-600",
-    lightBg: "bg-red-50",
-    ring: "ring-red-200",
-  },
-  yellow: {
-    bg: "bg-yellow-500",
-    border: "border-yellow-500",
-    text: "text-yellow-600",
-    lightBg: "bg-yellow-50",
-    ring: "ring-yellow-200",
-  },
-};
-
-// Event type configurations
-export const eventTypeConfig = {
-  event: { icon: "🎫", label: "Event" },
-  keynote: { icon: "🎯", label: "Keynote" },
-  talk: { icon: "💬", label: "Talk" },
-  break: { icon: "☕", label: "Break" },
-  networking: { icon: "🤝", label: "Networking" },
-};

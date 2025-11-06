@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import NavbarItems from "./NavbarItems.jsx";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -15,7 +18,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <img src="/devfest.png" alt="DevFest" className="h-16 w-auto" />
+            <button onClick={() => navigate("/")}>
+              <img src="/devfest.png" alt="DevFest" className="h-16 w-auto" />
+            </button>
           </div>
 
           {/* Desktop Navigation */}
