@@ -5,7 +5,7 @@ import { agendaData } from "../data/agendaData";
 
 export default function Agenda() {
   return (
-    <div className="min-h-screen bg-[#1e1e1e] py-20">
+    <div className="min-h-screen py-20">
       <div className="container mx-auto px-4 py-12">
         {/* Header Section */}
         <motion.div

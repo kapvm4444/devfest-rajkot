@@ -227,7 +227,7 @@ const BadgeCreator = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#1e1e1e] py-8 md:py-12">
+    <div className="min-h-screen  py-8 md:py-12">
       <div className="container mx-auto px-4 py-8">
         {/* Header Section */}
         <div className="text-center mb-12 md:mb-16">
