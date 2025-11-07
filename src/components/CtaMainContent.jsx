@@ -25,7 +25,7 @@ export default function CtaMainContent(props) {
           {/* Badge Creator CTA - Top Priority */}
 
           <Link
-            to="/agenda"
+            to="/badge"
             className="group block w-full bg-gradient-to-r text-black bg-white border-black border-8 font-bold py-6 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl font-google-sans relative z-40"
           >
             <div className="flex items-center justify-center space-x-3">
