@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import AppLayout from "./components/AppLayout.jsx";
 import BadgeCreator from "./components/BadgeCreator.jsx";
 import Agenda from "./components/Agenda.jsx";
@@ -14,6 +14,7 @@ function App() {
             <Route element={<BadgeCreator />} path={"/badge"}></Route>
             <Route element={<Agenda />} path={"/agenda"}></Route>
             <Route element={<Home />} index></Route>
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>
       </BrowserRouter>

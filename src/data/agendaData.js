@@ -24,7 +24,7 @@ export const agendaData = [
     id: 4,
     time: "10:30 AM - 11:15 AM",
     title: "Google Vertex AI: An Introduction to AutoML with Real-World Demo",
-    description: "by Harsh Manvar, Docker Caption of India",
+    description: "by Harsh Manvar, Docker Captain of India",
   },
   {
     id: 5,
