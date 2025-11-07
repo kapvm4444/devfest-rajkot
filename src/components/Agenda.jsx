@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Timeline from "./Timeline";
+import Timeline from "./ui/Timeline.jsx";
 import { agendaData } from "../data/agendaData";
 
 export default function Agenda() {
