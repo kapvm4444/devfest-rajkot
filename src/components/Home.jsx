@@ -22,13 +22,14 @@ const Home = () => {
 
       {/*Mobile View*/}
       <div className="relative min-h-screen block md:hidden">
-        <div className="absolute inset-0 z-0">
+        {/*<div className="absolute inset-0 z-0">
           <BackgroundLines className="flex items-center justify-center w-full flex-col px-4" />
-        </div>
+        </div>*/}
         {/*Background*/}
         <div className="relative z-20 pointer-events-none">
           {/*Main Content*/}
           <CtaMainContent />
+          <BackgroundBeams />
         </div>
       </div>
     </>

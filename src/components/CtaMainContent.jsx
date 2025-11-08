@@ -4,10 +4,10 @@ import { FiAward, FiCalendar } from "react-icons/fi";
 
 export default function CtaMainContent(props) {
   return (
-    <div className="min-h-screen flex items-center justify-center px-4">
+    <div className="min-h-screen flex items-center justify-center px-4 pointer-events-none">
       <div className="max-w-4xl mx-auto text-center">
         {/* Header Section */}
-        <div className="mb-16 pointer-events-auto">
+        <div className="mb-16 ">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 font-google-sans relative z-30">
             DevFest'25
           </h1>
@@ -26,7 +26,7 @@ export default function CtaMainContent(props) {
 
           <Link
             to="/badge"
-            className="group block w-full bg-gradient-to-r text-black bg-white border-black border-8 font-bold py-6 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl font-google-sans relative z-40"
+            className="group block w-full bg-gradient-to-r pointer-events-auto text-black bg-white border-black border-8 font-bold py-6 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl font-google-sans relative z-40"
           >
             <div className="flex items-center justify-center space-x-3">
               <FiAward className="w-6 h-6 transition-transform duration-300" />
@@ -40,7 +40,7 @@ export default function CtaMainContent(props) {
           {/* Agenda CTA - Secondary */}
           <Link
             to="/agenda"
-            className="group block w-full bg-gradient-to-r text-black bg-white border-black border-8 font-bold py-6 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl font-google-sans relative z-40"
+            className="group pointer-events-auto block w-full bg-gradient-to-r text-black bg-white border-black border-8 font-bold py-6 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl font-google-sans relative z-40"
           >
             <div className="flex items-center justify-center space-x-3">
               <FiCalendar className="w-6 h-6 group-hover:bounce transition-transform duration-300" />
