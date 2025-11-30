@@ -76,20 +76,26 @@ export const agendaData = [
   {
     id: 12,
     time: "4:00 PM - 4:40 PM",
+    title: "From Words to Wonders: Mastering Prompt Design",
+    description: "by Pratik Butani, Engineering Lead @7Span",
+  },
+  {
+    id: 13,
+    time: "4:40 PM - 5:10 PM",
     title: "Closing Notes",
     description:
       "Reflect on the day's learnings, key announcements, and closing remarks from the GDG Rajkot team.",
   },
   {
-    id: 13,
-    time: "4:40 PM - 5:10 PM",
+    id: 14,
+    time: "5:10 PM - 05:40",
     title: "Surily Surprise",
     description:
       "A special surprise session that you won't want to miss! Stay tuned for something exciting.",
   },
   {
-    id: 14,
-    time: "5:10 PM - Onwards",
+    id: 15,
+    time: "5:40 PM - Onwards",
     title: "Networking and Connect with Speakers",
     description:
       "Connect directly with our speakers, ask questions, continue conversations, and build lasting professional relationships.",
